@@ -62,8 +62,8 @@ class Njuskalo(Spider):
                 self.send_mail(flat_uri)
 
     def is_match(self, flat_price, flat_size):
-        return (flat_price > min(self.flat_price_range) and flat_price < max(self.flat_price_range) ) and \
-               (flat_size > min(self.flat_size_range) and  flat_size < max(self.flat_size_range))
+        return (flat_price >= min(self.flat_price_range) and flat_price <= max(self.flat_price_range) ) and \
+               (flat_size >= min(self.flat_size_range) and  flat_size <= max(self.flat_size_range))
 
     def send_mail(self, flat_uri):
         # only for gmail smtps servers, read here for more: https://www.quora.com/What-is-SMTP-Host
