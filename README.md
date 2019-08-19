@@ -1,6 +1,6 @@
 # stanovi
 
-This crawler tries to find a flat according to defined price and size preferences. It has an option to send an email with matching flat URL.
+This crawler tries to find a flat(njuskalo.hr site) according to defined price and size preferences. It has an option to send an email with matching flat URL.
 
 # caution
 
