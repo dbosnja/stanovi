@@ -67,7 +67,7 @@ class Njuskalo(Spider):
 
     def send_mail(self, flat_uri):
         # only for gmail smtps servers, read here for more: https://www.quora.com/What-is-SMTP-Host
-        # check here for TLS vs SSl: http://www.smtp-gmail.com/
+        # check here for TLS vs SSL: http://www.smtp-gmail.com/
         # probably you will have to enable "Access for less secure apps"(on gmail host) for this to work
         mailer = MailSender(
             smtphost='smtp.gmail.com',
