@@ -7,7 +7,7 @@ from scrapy.spiders import Spider
 from scrapy.mail import MailSender
 
 class Njuskalo(Spider):
-    name = 'njuskalo'
+    name = 'njuskalo_to_email'
     allowed_domains = ['njuskalo.hr']
     # around 5K flats so far
     start_urls = [
@@ -21,7 +21,7 @@ class Njuskalo(Spider):
     user_mail = '@gmail.com'
     user_pass = ''
     # custom part for flat preferences:
-    flat_price_range = [800.0, 2000.0]  # best to contain float type elements(in kunas!)
+    flat_price_range = [800.0, 4000.0]  # best to contain float type elements(in kunas!)
     flat_size_range = [30.0, 90.0]  # best to contain float type elements(in m2)
 
     def parse(self, response):
