@@ -4,4 +4,4 @@ This crawlers try to find a flat in Zagreb(njuskalo.hr site) according to define
 
 # caution
 
-If you use this crawler, please use it in a non-selfish manner, i.e. try to avoid DDoS attacks(keep the CONCURRENT_REQUESTS number low).
+If you use this crawlers, please use them in a non-selfish manner, i.e. try to avoid DDoS attacks(keep the CONCURRENT_REQUESTS number low).
