@@ -30,6 +30,10 @@ class Njuskalo(Spider):
         super(Spider, self).__init__()
         self.datetime = "{}".format(datetime.now().isoformat())
         self.file_name = "pot_stanovi_{datetime}_s_out".format(datetime=self.datetime)
+        with open(self.file_name, 'a') as file:
+            line_to_write = "########  Vrijeme pokretanja robota: {datetime}  ########\n\n".format(datetime=self.datetime)
+            file.write(line_to_write)
+            file.write("########  Lista stanova detektiranih kao potencijalni:  ########\n\n\n")
 
     def parse(self, response):
         total_page_number = self.get_total_page_number(response)
