@@ -1,6 +1,6 @@
 # stanovi
 
-This crawlers try to find a flat in Zagreb(njuskalo.hr site) according to defined price and size preferences. Two options are available; to send an email with matching flat URL or write it in a file.
+This crawlers try to find a flat in Zagreb(njuskalo.hr site) according to defined price and size preferences. Two options are available; to send an email with matching flats URL or write URLS in a file.
 
 # caution
 
